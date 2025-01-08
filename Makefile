@@ -14,3 +14,11 @@ bin/testHashTable: testHashTable.cpp HashTable.h TableEntry.h Dict.h
 clean:
 	rm -rf *.o *.gch bin
 
+
+bin/testBSTree: testBSTree.cpp BSTree.h BSNode.h
+	mkdir -p bin
+	g++ -o bin/testBSTree testBSTree.cpp
+
+clean:
+	rm -rf *.o *.gch bin
+
