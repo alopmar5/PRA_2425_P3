@@ -22,3 +22,8 @@ bin/testBSTree: testBSTree.cpp BSTree.h BSNode.h
 clean:
 	rm -rf *.o *.gch bin
 
+bin/testBSTreeDict: testBSTreeDict.cpp BSTreeDict.h BSTree.h BSNode.h TableEntry.h
+	mkdir -p bin
+	g++ -o bin/testBSTreeDict testBSTreeDict.cpp
+clean:
+	rm -rf *.o *.gch bin
